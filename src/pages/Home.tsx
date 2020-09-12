@@ -2,13 +2,14 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import NameSetter from '../components/NameSetter';
 
 const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>AulaFibHibrido</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -18,6 +19,14 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <ExploreContainer />
+        <NameSetter 
+        label="Seu Nome"
+        placeholder="Digite Seu Nome"
+        buttonTitle="Salvar" />
+        <NameSetter
+        label="Sua Mae"
+        placeholder="Digite o nome da sua Mae"
+        buttonTitle="Salvar sua Mae" />
       </IonContent>
     </IonPage>
   );
